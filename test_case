@@ -1,0 +1,19 @@
+Test Case: Hotel Search on Booking.com
+Test Steps:
+Open Booking.com
+
+1-Accept cookies (if prompted)
+2-Enter search location
+3-Select check-in and check-out dates
+4-Choose number of adults and rooms
+5-Click search
+6-Wait for results to load
+*************************************
+7-Click the first hotel result
+8-Switch to new tab (if it opens)
+9-Extract hotel name, price, rating
+10-Validate:
+*Correct city name in title
+*Date range present
+*Price is not empty
+*Take screenshots if needed

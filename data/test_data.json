@@ -1,0 +1,41 @@
+
+{
+  "data": [
+    {
+          "location": "Budapest",
+          "check-in": "2025-05-10",
+          "check-out": "2025-05-15",
+          "adults": "2",
+          "rooms": "1"
+    },
+    {
+          "location": "Austria",
+          "check-in": "2025-10-12",
+          "check-out": "2025-10-18",
+          "adults": "2",
+          "rooms": "1"
+
+    },
+    {
+          "location": "Cartagena",
+          "check-in": "2025-09-12",
+          "check-out": "2025-09-18",
+          "adults": "2",
+          "rooms": "1"
+
+    }
+
+
+
+
+  ]
+
+
+
+}
+
+
+
+
+
+
