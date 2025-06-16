@@ -9,11 +9,11 @@ from utils.reports import save_report
 class Search_results:
     def __init__(self,driver,):
         self.driver=driver
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 15)
         self.hotel_info={}
 
     def location_validation(self,place_name):
-        place=self.driver.find_element(By.XPATH,"//h1[@class='f6431b446c d5f78961c3']").text
+        place=self.driver.find_element(By.XPATH,"//h1[@class='b87c397a13 cacb5ff522']").text
         assert place_name in place
 
     def filter_hotel_selection(self):
@@ -32,9 +32,9 @@ class Search_results:
             print(f"No hotels found or error occurred: {e}")
 
     def final_validations(self,check_in,check_out):
-        hotel_name=self.driver.find_element(By.XPATH,"//h2[@class='d2fee87262 pp-header__title']").text
+        hotel_name=self.driver.find_element(By.XPATH,"//h2[@class='ddb12f4f86 pp-header__title']").text
         self.hotel_info['hotel_name']=hotel_name
-        address=self.driver.find_element(By.XPATH,"//div[@class='a53cbfa6de f17adf7576']").text
+        address=self.driver.find_element(By.XPATH,"//div[@class='b99b6ef58f cb4b7a25d9']").text
         self.hotel_info["address_info"]=address
         prices=self.driver.find_elements(By.XPATH,"//span[@class='prco-valign-middle-helper']")
         self.hotel_info["price"]=prices[0].text

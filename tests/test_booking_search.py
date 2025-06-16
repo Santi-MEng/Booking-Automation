@@ -16,13 +16,15 @@ def test_booking(set_driver,test_list_item):
     driver=set_driver
     homepage=HomePage(driver)
     homepage.load()
+    homepage.genius()
     homepage.accept_cookies()
     homepage.location(test_list_item["location"])
     homepage.select_dates(test_list_item["check-in"],test_list_item["check-out"])
-    homepage.guest()
+    #homepage.guest()
     homepage.click_search()
     #New Page
     homepage.accept_cookies()
+    homepage.genius()
     search_results=Search_results(driver)
     search_results.location_validation(test_list_item["location"])
     search_results.filter_hotel_selection()
